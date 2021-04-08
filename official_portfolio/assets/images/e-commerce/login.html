@@ -1,0 +1,82 @@
+<html>
+
+<style>
+
+	
+	div{border:1px solid black;box-shadow:10px 10px 20px black;padding:50px;display:block;margin-top:100px;margin-left:500;margin-right:500;text-align:center;}
+	h2{color:red;align.center;}
+
+</style>
+
+
+<body>
+<div>
+<h2>LOG IN</h2>
+<form name = "form1">
+<label>Username:<label/>
+<input name = "username" type = "text" size = 10/>
+<br>
+<br>
+<p>
+<label>Password:</label>
+<input name = "psw" type = "password" size = 10/>
+</p>
+<br>
+
+<p>
+<input id = "btn" type = "button" value = "login" />
+</p>
+
+<form/>
+
+</body>
+<script type="text/javascript">
+
+var a = 4;
+
+
+btn.onclick = function()
+{
+
+if(form1.psw.value == "gameshop")
+{
+
+
+alert('benvenuto');
+
+window.location.href = "home2.html";
+
+
+
+}
+else
+{
+
+a--;
+
+if(a <= 0)
+{
+
+alert("mi dispiace hai esauriti i tentativi")
+
+a = 0;
+window.location.href = "riprova, sarai piu fortunato";
+
+}
+else
+{
+
+alert('password errata, ti mancano ' + a + ' tentativi');
+
+}
+
+}
+
+}
+</script>
+
+<a href="reg.html">non sei registrato?<br>clicca qui!</a>
+
+
+</div>
+</html>

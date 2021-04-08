@@ -1,0 +1,136 @@
+body{font-family:Arial;background-color: white;width:90s;}
+
+h1{text-align:center;}
+
+.bottone{background-color:Blue;
+	width:60%;
+	padding:5px;
+	font-size:28px;
+	border:1px solid black;
+	color:black;}
+	
+.bottone:hover{background-color:lightgray;width:65%;cursor:pointer;text-decoration:none;color:black;}
+	a.black{text-decoration:none;color:black}
+	a.black:hover{text-decoration:none;color:black}
+	a.bianco{color:white;text-decoration:none;}
+	a.bianco:hover{color:white;}
+td,tr{width:26%;}
+.ricerca{border:1px solid black;text-align:center;padding:0;}
+
+button{color:black;}
+
+table.menu{width:100%;
+		   background-color:DodgerBlue;
+		   margin:0;
+		   border-collapse:collapse;
+		   text-align:center;	
+		
+		   }
+		   
+table.console{      
+				width:100%;
+		   background-color:transparent;
+		   margin:0;
+		   border-collapse:collapse;
+		   text-align:center;
+		   border:transparent;
+		   }	
+		   
+button.red{background-color:red;
+	width:100%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;
+	color:white;}		
+	
+button.green{background-color:green;
+	width:100%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+	
+button.blue{background-color:Blue;
+	width:100%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+	
+button.yellow{background-color:gold;
+	width:100%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+	
+button.red:hover{background-color:tomato;
+	width:110%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}		
+	
+button.green:hover{background-color:lightgreen;
+	width:110%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+	
+button.blue:hover{background-color:DodgerBlue;
+	width:110%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+	
+button.yellow:hover{background-color:yellow;
+	width:100%;
+	padding:5px;
+	font-size:28px;
+	border:2px solid black;}	
+		   
+tr.men,td.me{border:1px solid black;padding:10px;}
+	
+div.titolo{background-color:white;text-align:center;font-size:35px;}
+
+div.col{border:1px solid black;
+		background-color:DodgerBlue;
+		display:inline;
+		padding:10px;
+		text-align:center;
+		margin-left:0;
+		margin-right:0;
+		width:20%;}
+
+
+
+
+
+button.vantaggi {
+  background-color: white;
+  border:  1px solid blue;
+  width:60%;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button.vantaggi:hover{width:65%;box-decoration:shadow;}
+
+.carrello{width:25%;border:10px solid black;}
+
+img.vanta{width:100%;}
+
+td.van {width:20%;}
+
+table.vantagg{width:100%;float:center;margin-left:5%;}
+
+
+hr{ border: 3px solid black;width:95%;font-family:comic sans MS}
+
+.r{text-align:center;}
+
+.structural {
+position:absolute;
+left:-9999px;
+}
+
+button.vantaggi{border:transparent;}
+

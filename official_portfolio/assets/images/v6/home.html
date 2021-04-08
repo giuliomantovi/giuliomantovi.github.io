@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/css.css">
+
+	<title>PING PONG</title>
+	<style>
+		#titolo{color:red;font-size:50px;text-align:center;}
+		#autori{color:red;font-size:20px;text-align:center;}
+		#inseriscinome{color:black;font-size:40px;text-align:center;}
+		body{text-align:center;
+			background-image: url("immagini/sfondo4.jpg");background-repeat:no-repeat;background-size: cover;bacground-position:center;background-attachment:fixed;};
+
+	</style>
+</head>
+
+<body>
+<br>
+<br>
+<h1 id="titolo">PING PONG THE GAME</h1>
+<br>
+<p id="autori">Mantovi Giulio e Fabio Prampolini</p>
+<br>
+<p id="inseriscinome">SELEZIONA MODALITA</p>
+<br>
+<!--ogni div è un'immagine!-->
+<div class="container">
+  <div class="content">
+    <a  onClick="pco()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPC.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">PLAYER VERSUS PC</h3>
+        <p class="content-text">BLACK AND WHITE</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <a onClick="ppo()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPC.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">PLAYER VERSUS PLAYER</h3>
+        <p class="content-text">BLACK AND WHITE</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <a onClick="boo()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPC.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">BONUS</h3>
+        <p class="content-text">BLACK AND WHITE</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <a onClick="pcc()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPCCOLOR.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">PLAYER VERSUS PC</h3>
+        <p class="content-text">COLORIZED</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <a onClick="ppc()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPCCOLOR.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">PLAYER VERSUS PLAYER</h3>
+        <p class="content-text">COLORIZED</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <a onClick="boc()" href="nome.html" >
+      <div class="content-overlay"></div>
+      <img class="content-image" src="./immagini/1VPCCOLOR.PNG">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">BONUS</h3>
+        <p class="content-text">COLORIZED</p>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+</html>
+<script >
+	var modalita=0;
+
+	function pco(){
+	modalita=1;
+	localStorage.setItem("modalita", modalita);
+	}
+
+	function pcc(){
+	modalita=2;
+	localStorage.setItem("modalita", modalita);
+	}
+
+	function ppo(){
+	modalita=3;
+	localStorage.setItem("modalita", modalita);
+	}
+
+	function ppc(){
+	modalita=4;
+	localStorage.setItem("modalita", modalita);
+	}
+
+	function boo(){
+	modalita=5;
+	localStorage.setItem("modalita", modalita);
+	}
+
+	function boc(){
+	modalita=6;
+	localStorage.setItem("modalita", modalita);
+	}
+
+</script>

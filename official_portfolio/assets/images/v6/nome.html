@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>PING PONG</title>
+	<style>
+		#titolo{color:red;font-size:50px;text-align:center;}
+		#autori{color:red;font-size:20px;text-align:center;}
+		#nomepc,#nomepp{color:black;font-size:40px;text-align:center;}
+		body{text-align:center;
+			background-image: url("immagini/sfondo4.jpg");background-repeat:no-repeat;background-size: cover;bacground-position:center;background-attachment:fixed;};
+		h7{text-align:center;}
+		p{text-align:center}
+		#nomepp,#nomepc{font:italic bold 40px arial}
+		input{font-size:30px;text-align:center}
+		div{font-size:30px};
+		td,tr{width:26%;}
+		#versus{width:10%;}
+
+	</style>
+</head>
+
+<body>
+	<br>
+	<br>
+	<br>
+	<h1 id="titolo">PING PONG THE GAME</h1>
+	<p id="autori">Mantovi Giulio e Fabio Prampolini</p>
+	<br>
+	<br>
+	<br>
+	<div>
+	<p id="nomepp">INSERISCI I NOMI </p>
+	<p id="nomepc">INSERISCI IL TUO NOME E SELEZIONA LA DIFFICOLTA'</p>
+	<br>
+	<br>
+	<p style="width:100%">
+	<input placeholder="Player 1" style="width:20%;height:50px " id="nome" type="text" name="nome " size="20px">
+	<img id="versus" src="immagini/vsgif.gif"></img>
+	<input placeholder="Player 2" style="width:20%;height:50px " id="nome2" type="text" name="nome2 " size="20px">
+	</p>
+	<br>
+	<button style="width:20%; font-size:35px" id="confirm" class="btn btn-primary btn-lg" onClick="redirect()">CONFERMA</button>
+	<p>
+		<button  style="width:20%; font-size:35px" id="f" onClick="facile(); redirect()" type="button" class="btn btn-success btn-lg">FACILE</button>
+		<br>
+		<button style="width:20%; font-size:35px" id="m" onClick="media(); redirect()" type="button" class="btn btn-warning btn-lg">MEDIA</button>
+		<br>
+		<button style="width:20%; font-size:35px" id="d" onClick="difficile(); redirect()" type="button" class="btn btn-danger btn-lg">DIFFICILE</button>
+		<br>
+		<button style="width:20%; font-size:35px" id="e" onClick="estrema(); redirect()" type="button" class="btn btn-dark btn-lg">ESTREMA</button>
+		
+	</p>
+
+</body>
+</html>
+<script >
+	
+var mod=localStorage.getItem("modalita");
+	if(mod==1||mod==2){
+		$("#nome2").hide();
+		$("#versus").hide();
+		$("#confirm").hide();
+		$("#nomepp").hide();
+	}
+	else
+	{
+		$("#f").hide();
+		$("#m").hide();
+		$("#d").hide();
+		$("#e").hide();
+		$("#nomepc").hide();
+	}
+		
+	function facile(){
+		var difficolta=1;
+		localStorage.setItem("difficolta", difficolta);
+	}
+	
+	function media(){
+		var difficolta=2;
+		localStorage.setItem("difficolta", difficolta);
+	}
+	
+	function difficile(){
+		var difficolta=3;
+		localStorage.setItem("difficolta", difficolta);
+	}
+	
+	function estrema(){
+		var difficolta=4;
+		localStorage.setItem("difficolta", difficolta);
+	}
+	
+	function redirect(){
+		var n1=document.getElementById("nome").value;	
+		localStorage.setItem("nome", n1);
+		var n2=document.getElementById("nome2").value;	
+		localStorage.setItem("nome2", n2);
+		
+		switch (mod) {
+		case "1": window.location.href = "pc.html";				
+				break;	
+				
+		case "2": window.location.href = "pcCOLOR.html";
+				break;
+				
+		case "3": window.location.href = "pvp.html";
+				break;
+
+		case "4": window.location.href = "pvpCOLOR.html";
+				break;
+				
+		case "5": window.location.href = "bonus.html";
+				break;
+				
+		case "6": window.location.href = "bonusCOLOR.html";
+				break;
+		}		
+	}
+
+</script>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/stile.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js " ></script>
+<script type="text/javascript" src="js/javascript.js" ></script>
+<meta charset= "UTF-8">
+<style>
+
+body{
+background-image: url("tornado.gif");background-repeat:no-repeat;background-size: cover;bacground-position:center;background-attachment:fixed;
+font-size:60px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sfondo">
+<br>
+<div class="titolo"><h1>WEATHER INFOS</h1></div> 
+
+<p class="ricerca"> CITTA' </p>
+<p class="ricerca">
+<input style="width:80%; height:40px; border:2px solid black; font-size: 25px;text-align:center;" value="Reggio nell'Emilia" id="città" ></p><!campo città> 
+<br>
+<p class="ricerca"> UNITA' DI MISURA </p>
+<p class="ricerca">
+<input style="width:80%; height:40px; border:2px solid black;font-size: 25px;text-align:center;" value="metric" id="misura" ></p><!campo misura> 
+<br>
+
+<p style="background-color:transparent">
+<button  class="green" onclick="jsonCall()"><b>SEARCH</b></a></button></p>  <!bottone con chiamata json> 
+ <br>
+ <br>
+ 
+ <textarea style="margin-left:6%;font-size:25px" rows="10" cols="70"  id="dati"  readonly>
+ </textarea>
+ 
+ <br>
+ <br>
+
+</div>
+</body>
+</html>
